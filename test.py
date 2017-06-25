@@ -7,6 +7,7 @@ from tkinter import *
 fenetre = Tk()
 fenetre.geometry('200x200')
 
+
 # On crée un label
 champ_label = Label(fenetre, text="Hello")
 champ_label2 = Label(fenetre, text="Hello again")

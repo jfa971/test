@@ -12,6 +12,7 @@ fenetre.geometry('200x200')
 champ_label = Label(fenetre, text="Hello")
 champ_label2 = Label(fenetre, text="Hello again")
 
+
 # On affiche le label dans la fenêtre
 champ_label.pack()
 champ_label2.pack()

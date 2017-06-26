@@ -1,26 +1,14 @@
-print ("Hello")
+import sys
 
-# On importe Tkinter
-from tkinter import *
+print (sys.version_info)
 
-# On crée une fenêtre, racine de notre interface
-fenetre = Tk()
-fenetre.geometry('200x200')
+from PyQt5.QtWidgets import QApplication, QWidget
 
+monApp=QApplication(sys.argv)
+w=QWidget()
+w.resize(500,300)
+w.move(500, 500)
+w.setWindowTitle("Titre de fenêtre")
+w.show()
 
-# On crée un label
-champ_label = Label(fenetre, text="Hello")
-champ_label2 = Label(fenetre, text="Hello again")
-
-
-# On affiche le label dans la fenêtre
-champ_label.pack()
-champ_label2.pack()
-
-# On crée un bouton
-bouton_quitter = Button(fenetre, text="Quitter", command=fenetre.quit)
-# On affiche le bouton dans la fenêtre
-bouton_quitter.pack()
-
-# On démarre la boucle Tkinter qui s'interompt quand on ferme la fenêtre
-fenetre.mainloop()
+sys.exit(monApp.exec_())
